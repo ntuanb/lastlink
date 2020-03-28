@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            <h4 style="display: inline-block; transform: scale(-1, 1); margin-right: -3px;">L</h4>
+            <h4 style="display: inline-block; margin-left: -3px;">L</h4>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+
+<ion-footer>
+    <ion-segment color="dark">
+        <ion-segment-button (click)="view('recent')">
+            Recent
+        </ion-segment-button>
+        <ion-segment-button (click)="view('about')">
+            About
+        </ion-segment-button>
+        <ion-segment-button (click)="view('settings')">
+            Settings
+        </ion-segment-button>
+    </ion-segment>
+</ion-footer>

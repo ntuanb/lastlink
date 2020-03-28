@@ -1,0 +1,21 @@
+<ion-content padding scrollX="false" scrollY="false">
+    <div style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 5%);
+    ">
+        <form (ngSubmit)="submit()" style="width: 100%">
+            <ion-item class="mb-3">
+                <ion-input type="text" [(ngModel)]="form.text" name="text" placeholder="e.g scary clown"></ion-input>
+            </ion-item>
+
+            <button ion-button type="submit" color="primary" block (click)="search()">
+                <b>Go</b>
+            </button>
+            <button ion-button type="submit" color="primary" clear block (click)="lucky()">
+                I'm Feeling Lucky
+            </button>
+        </form>
+    </div>
+</ion-content>

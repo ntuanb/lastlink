@@ -1,0 +1,29 @@
+<ion-content padding scrollX="false" scrollY="false">
+        <div style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 5%);
+            text-align: center;
+        ">
+            <div>
+                <p>
+                    Recent
+                </p>
+
+                <ion-list no-lines>
+                    
+                      <ion-item *ngFor="let item of searches" text-center class="no-padding">
+                          {{ item.text }}
+                      </ion-item>
+    
+                </ion-list>
+            </div>
+        </div>
+    </ion-content>
+    
+    <ion-footer>
+        <ion-toolbar>
+            <ion-title (click)="close()"><ion-icon name="close"></ion-icon></ion-title>
+        </ion-toolbar>
+    </ion-footer>

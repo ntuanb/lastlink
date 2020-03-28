@@ -1,0 +1,35 @@
+<ion-content padding scrollX="false" scrollY="false">
+    <div style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 5%);
+        text-align: center;
+    ">
+        <div>
+            <p>
+                Settings
+            </p>
+
+            <ion-list>
+                
+                  <ion-item>
+                      
+                    <ion-label>Use previous user's action</ion-label>
+                    <ion-toggle 
+                        [(ngModel)]="form.usePreviousAction" 
+                        (ionChange)="change()" 
+                        checked="form.usePreviousAction"
+                        ></ion-toggle>
+                  </ion-item>
+
+            </ion-list>
+        </div>
+    </div>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-title (click)="close()"><ion-icon name="close"></ion-icon></ion-title>
+    </ion-toolbar>
+</ion-footer>
